@@ -1,0 +1,58 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.dylib
+.Python
+env/
+venv/
+.venv/
+
+# Poetry / build
+dist/
+build/
+*.egg-info/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Data
+data/raw/**
+data/interim/**
+data/prod/**
+!.dvcignore
+!.gitattributes
+data/*.dvc
+
+# DVC cache
+.dvc/cache/
+
+# Parquet and other generated artifacts
+*.parquet
+*.feather
+*.arrow
+
+# MLflow and logs
+mlruns/
+logs/
+
+# Experiments, artifacts, figures
+out/
+reports/
+*.png
+*.pdf
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+.vscode/
+.idea/
+*.log
+*.tmp

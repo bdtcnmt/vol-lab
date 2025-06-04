@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vol"
+version = "0.1.0"
+description = "Volatility-surface & RV lab"
+authors = [
+  {name="Brennan Thompson", email="you@example.com"},
+]
+dependencies = [
+  "pandas>=1.0.0",
+]
+
+[project.scripts]
+vol-cli = "vol.cli:main"         # optional if you want a console script
